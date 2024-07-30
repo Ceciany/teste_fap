@@ -1,23 +1,19 @@
-class Calculadora:
+class Calculator:
 
-    def __init__(self,n1=10, n2=10):
-        self.n1 = n1
-        self.n2 = n2
+    def add (self,a,b):
+        return a+b
     
-    def somar (self,n1,n2):
-        return n1+n2
+    def subtract (self,a,b):
+        return a-b
     
-    def subtrair (self,n1,n2):
-        return n1-n2
+    def multiply (self,a,b):
+        return a*b
     
-    def multiplicar (self,n1,n2):
-        return n1*n2
+    def divide (self,a,b):
+        return a/b
     
-    def dividir (self,n1,n2):
-        return n1/n2
-    
-calc = Calculadora()
-print(calc.somar(5,2))
-print(calc.subtrair(5,2))
-print(calc.multiplicar(5,2))
-print(calc.dividir(5,2))
+calc = Calculator()
+print(calc.add(5,2))
+print(calc.subtract(5,2))
+print(calc.multiply(5,2))
+print(calc.divide(5,2))
