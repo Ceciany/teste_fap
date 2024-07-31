@@ -1,5 +1,5 @@
 import pytest
-from menu import Calculator
+from main import Calculator
 @pytest.fixture
 def calc():
     return Calculator()

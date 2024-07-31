@@ -1,4 +1,4 @@
-class Calculator:
+class Calculator1:
     def adicao (self, a, b):
         return a + b
     
