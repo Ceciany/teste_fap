@@ -45,3 +45,21 @@ def test_preencer_campo_nome(setup_teardown):
     time.sleep(3)
 
     assert campo_nome.get_attribute ("value") == "Ceciany"
+
+def test_checkbox (setup_teardown):
+    driver = setup_teardown
+
+    checkbox_pizza = driver.find_element (By.CSS_SELECTOR,"#FormComidaPizza")
+
+    checkbox_pizza.click()
+
+    assert checkbox_pizza.is_selected() == True
+
+def test_radio_button (setup_teardown):
+    driver = setup_teardown
+
+    radio_button_sexo_masc = driver.find_element (By.CSS_SELECTOR,"#formSexoMasc")
+
+    radio_button_sexo_masc.click()
+
+    assert radio_button_sexo_masc.is_selected() == True

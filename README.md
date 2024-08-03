@@ -7,3 +7,6 @@
 pytest
 pytest-html
 selenium
+]
+rodar só um teste
+#pytest -s test_webAutomation.py::test_preencher_campo_nome
